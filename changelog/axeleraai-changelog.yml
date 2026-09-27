@@ -1,0 +1,40 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.axelera.ai/sdk/release-notes/
+sources:
+- https://docs.axelera.ai/sdk/release-notes/
+- https://docs.axelera.ai/sdk/v1.7/release-notes/
+- https://docs.axelera.ai/sdk/v1.6/release-notes/
+entries:
+- breaking: true
+  highlights:
+  - Metis 4-chip PCIe with 8GB RAM and Metis chip-down designs are supported in this release.
+  - Pre-compiled kernel binaries are now mandatory. The AxModel format moves to major version 5 and the RISC‑V toolchain is no longer part of
+    a runtime installation.
+  - 'New: standalone Python model recipes (Alpha). Selected Model Zoo models now ship a readable, self‑contained build script under model_recipes/
+    with no zoo runtime dependency.'
+  - Linux kernel support extended down to 5.4 (Yocto dunfell) and up to 6.17.
+- breaking: false
+  highlights:
+  - Voyager SDK v1.7.0 expands the pipeline builder capabilities, adds new computer vision models, and broadens hardware and platform support.
+  - Support for Metis 1-chip PCIe Rev2 2 GB and 8 GB DDR variants.
+  - New computer vision models including YOLOv4, YOLOv4‑CSP‑Leaky, and YOLO26 semantic segmentation family.
+  - The Python‑native Pipeline Builder API gains a streaming runtime and many new capabilities.
+- breaking: true
+  highlights:
+  - This release is a patch on top of v1.6.0, delivering improvements to Windows performance, expanded hardware support, pipeline stability fixes,
+    and a new documentation portal.
+  - '[Breaking change] Driver compatibility: Voyager SDK on Windows now requires Metis Driver 1.3.2 or newer. Drivers v1.3.1 and earlier are no
+    longer supported.'
+  - Performance improvements in the PCIe driver for Windows and in libaxldev, closing the gap with Linux.
+  - 'Fixed closed‑loop power control on Metis M.2 Max: the feature no longer results in unexpected performance degradation.'
+- breaking: false
+  highlights:
+  - Voyager SDK v1.6.0 introduces support for new Axelera hardware, host platforms and operating systems.
+  - Metis M.2 Max support, delivering PCIe‑class performance in the M.2 form factor.
+  - New Pipeline Builder API for defining and executing pipelines from Python.
+  - Standalone Python wheels with ManyLinux support for broader Linux distribution coverage.
+current_version: v1.8.0
+note: Versioning scheme is vMAJOR.MINOR.PATCH. Entries are ordered newest first. Dates are not provided on the pages.
+docs: https://docs.axelera.ai/sdk/release-notes/

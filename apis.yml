@@ -1,23 +1,125 @@
 aid: axeleraai
+
 name: Axeleraai
-description: 'Axeleraai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Axeleraai (Axelera AI) develops high‑performance AI accelerators and edge computing solutions, offering hardware such as the Metis
+  and Europa AI processors, a comprehensive SDK (Voyager), model zoo, and enterprise‑grade software. The company focuses on datacenter performance,
+  edge efficiency, and sovereign AI, targeting industries like manufacturing, healthcare, and robotics. Their products span embedded, edge, and
+  server form‑factors, emphasizing low power consumption, high TOPS per watt, and on‑device data privacy.
+
+image: https://axelera.ai/hubfs/Axelera-White-header-logo-right-space-2.svg
+
 url: https://raw.githubusercontent.com/api-evangelist/axeleraai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- AI
+- Hardware
+- Edge Computing
+- Datacenter
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/axeleraai-rules.yml
+- type: JSONLD
+  url: json-ld/axeleraai-context.jsonld
+- type: Vocabulary
+  url: vocabulary/axeleraai-vocabulary.yml
+- type: DataModel
+  url: data-model/axeleraai-data-model.yml
+- type: ChangeLog
+  url: changelog/axeleraai-changelog.yml
+- type: Security
+  url: https://axelera.ai/vulnerability-disclosure-policy
+- type: Conformance
+  url: conformance/axeleraai-conformance.yml
+- type: LLMsTxt
+  url: llms/axeleraai-llms.txt
+- type: SecurityTxt
+  url: well-known/axeleraai-security.txt
+- type: WellKnown
+  url: well-known/axeleraai-well-known.yml
+- type: Hosts
+  url: hosts/axeleraai-hosts.yml
+- type: Vendors
+  url: vendors/axeleraai-vendors.yml
+- type: TermsOfService
+  url: https://community.axelera.ai/site/terms
+- type: SignUp
+  url: https://community.axelera.ai/member/register
+- type: PrivacyPolicy
+  url: https://axelera.ai/privacy-policy?hsLang=en
+- type: Newsroom
+  url: https://axelera.ai/news
+- type: GitHubOrganization
+  url: https://github.com/axelera-ai-hub
+- type: ChangeLog
+  url: https://docs.axelera.ai/sdk/release-notes
+- type: Blog
+  url: https://axelera.ai/blog
+- type: APIReference
+  url: https://docs.axelera.ai/sdk/reference/models/model-zoo
+- type: GettingStarted
+  url: https://docs.axelera.ai/sdk/getting-started
+- type: Documentation
+  url: https://docs.axelera.ai/
+- type: VulnerabilityDisclosure
+  url: security/axeleraai-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/axeleraai-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/axeleraai
+  url: https://axelera.ai
+
+apis:
+- name: Axelera AI SDK
+  description: SDK for Axelera AI hardware, providing model zoo and inference tools.
+  humanURL: https://docs.axelera.ai/sdk
+  baseURL: null
+  aid: axeleraai:axelera-ai-sdk
+- aid: axeleraai:axeleraai-api
+  name: Axeleraai API
+  description: 'Axeleraai API as documented publicly: 5 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
+
+    not the provider''s own document.'
+  humanURL: https://docs.axelera.ai/sdk/v1.7/user-guides/sdk-install
+  baseURL: https://software.axelera.ai
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/axeleraai-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/axeleraai-get-artifactory-axelera-win-packages18-x18-xid-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript, preventing machine‑readable spec discovery.
+  evidence:
+  - url: https://docs.axelera.ai
+    status: 200
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,40 @@
+generated: '2026-09-27'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/axeleraai-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on api.axelera.ai, axelera.ai, chat.wingman.axelera.ai, community.axelera.ai;
+  verdict opaque (https://axelera.ai/mcp answered 403: the edge authenticates before it routes, which proves nothing either way). Candidate tools
+  below are derived from the 5 operation(s) in the provider''s own OpenAPI (5 listed); they describe what a server WOULD expose, not one that
+  exists.'
+tools:
+- name: get_artifactory_api_security_keypair_axelera_public
+  operationId: get_artifactory_api_security_keypair_axelera_public
+  method: GET
+  path: /artifactory/api/security/keypair/axelera/public
+  description: GET /artifactory/api/security/keypair/axelera/public
+- name: get_artifactory_axelera_win_packages_1_6_x_16x_id
+  operationId: get_artifactory_axelera_win_packages_1_6_x_16xId
+  method: GET
+  path: /artifactory/axelera-win/packages/1.6.x/{16xId}
+  description: GET /artifactory/axelera-win/packages/1.6.x/axelera-win-device-installer.exe
+- name: get_artifactory_axelera_win_packages_1_7_x_17x_id
+  operationId: get_artifactory_axelera_win_packages_1_7_x_17xId
+  method: GET
+  path: /artifactory/axelera-win/packages/1.7.x/{17xId}
+  description: GET /artifactory/axelera-win/packages/1.7.x/axelera-win-device-installer.exe
+- name: get_artifactory_axelera_win_packages_1_8_x_18x_id
+  operationId: get_artifactory_axelera_win_packages_1_8_x_18xId
+  method: GET
+  path: /artifactory/axelera-win/packages/1.8.x/{18xId}
+  description: Windows Setup
+- name: get_artifactory_axelera_win_packages_packageid_axelera_win_d
+  operationId: get_artifactory_axelera_win_packages_packageid_axelera_win_device_installer_exe
+  method: GET
+  path: /artifactory/axelera-win/packages/{packageid}/axelera-win-device-installer.exe
+  description: GET /artifactory/axelera-win/packages/1.8.x/axelera-win-device-installer.exe

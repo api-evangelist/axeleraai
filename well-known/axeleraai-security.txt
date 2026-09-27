@@ -1,0 +1,5 @@
+# This security.txt file follows the standard defined at https://securitytxt.org/
+Contact: mailto:security@axelera.ai
+Expires: 2026-06-01T00:00:00.000Z
+Policy: https://axelera.ai/vulnerability-disclosure-policy
+Preferred-Languages: en
