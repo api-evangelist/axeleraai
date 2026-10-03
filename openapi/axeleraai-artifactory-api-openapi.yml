@@ -1,0 +1,139 @@
+openapi: 3.2.0
+info:
+  title: Axeleraai Artifactory API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 5 operation(s) read from 9 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Axeleraai has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 1
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.axelera.ai/sdk/v1.7/user-guides/sdk-install
+  - https://docs.axelera.ai/sdk/user-guides/axmonitor
+  - https://docs.axelera.ai/sdk/user-guides/sdk-install
+  - https://docs.axelera.ai/sdk/user-guides/windows-setup
+  - https://docs.axelera.ai/sdk/v1.6/user-guides/sdk-install
+  - https://docs.axelera.ai/sdk/v1.6/user-guides/windows-setup
+  - https://docs.axelera.ai/sdk/v1.6/user-guides/axmonitor
+  - https://docs.axelera.ai/sdk/v1.7/user-guides/windows-setup
+  - https://docs.axelera.ai/sdk/v1.7/user-guides/axmonitor
+servers:
+- url: https://software.axelera.ai
+tags:
+- name: Artifactory
+paths:
+  /artifactory/api/security/keypair/axelera/public:
+    get:
+      operationId: get_artifactory_api_security_keypair_axelera_public
+      tags:
+      - Artifactory
+      summary: GET /artifactory/api/security/keypair/axelera/public
+      x-source: https://docs.axelera.ai/sdk/v1.7/user-guides/sdk-install
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl -fsSL https://software.axelera.ai/artifactory/api/security/keypair/axelera/public | gpg --dearmor -o /etc/apt/keyrings/axelera.gpg" # Ubuntu 22.04 sudo sh -c "echo ''deb [signed-by=/etc/apt/keyrings/axelera.gpg] https://software.axelera.ai/artifactory/axelera-apt-source ubuntu22 main'' > /etc/apt/sources.list.d/axelera.list" # Ubuntu 24.04 sudo sh -c "echo ''deb [signed-by=/etc/apt/keyrings/axel'
+  /artifactory/axelera-win/packages/1.6.x/{16xId}:
+    get:
+      operationId: get_artifactory_axelera_win_packages_1_6_x_16xId
+      tags:
+      - Artifactory
+      summary: GET /artifactory/axelera-win/packages/1.6.x/axelera-win-device-installer.exe
+      x-source: https://docs.axelera.ai/sdk/v1.6/user-guides/windows-setup
+      parameters:
+      - name: 16xId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.6.x/axelera-win-device-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.6.x/axelera-win-runtime-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.6.x/axelera-win-syslibs-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/pa
+        collapsed_from: 5 example path(s) differing only at 16xId
+  /artifactory/axelera-win/packages/1.7.x/{17xId}:
+    get:
+      operationId: get_artifactory_axelera_win_packages_1_7_x_17xId
+      tags:
+      - Artifactory
+      summary: GET /artifactory/axelera-win/packages/1.7.x/axelera-win-device-installer.exe
+      x-source: https://docs.axelera.ai/sdk/v1.7/user-guides/windows-setup
+      parameters:
+      - name: 17xId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.7.x/axelera-win-device-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.7.x/axelera-win-runtime-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.7.x/axelera-win-toolchain-deps-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera
+        collapsed_from: 4 example path(s) differing only at 17xId
+  /artifactory/axelera-win/packages/1.8.x/{18xId}:
+    get:
+      operationId: get_artifactory_axelera_win_packages_1_8_x_18xId
+      tags:
+      - Artifactory
+      summary: Windows Setup
+      x-source: https://docs.axelera.ai/sdk/user-guides/windows-setup
+      parameters:
+      - name: 18xId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetArtifactoryAxeleraWinPackages18X18XidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at 18xId
+  /artifactory/axelera-win/packages/{packageid}/axelera-win-device-installer.exe:
+    get:
+      operationId: get_artifactory_axelera_win_packages_packageid_axelera_win_device_installer_exe
+      tags:
+      - Artifactory
+      summary: GET /artifactory/axelera-win/packages/1.8.x/axelera-win-device-installer.exe
+      x-source: https://docs.axelera.ai/sdk/user-guides/windows-setup
+      parameters:
+      - name: packageid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.8.x/axelera-win-device-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.8.x/axelera-win-runtime-installer.exe curl -L -O https://software.axelera.ai/artifactory/axelera-win/packages/1.8.x/axelera-win-services-installer.exe cd .. \n 4a. Install the executable packages ​ \n important If any"
+        collapsed_from: 3 example path(s) differing only at packageId
+components:
+  schemas:
+    GetArtifactoryAxeleraWinPackages18X18XidResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Successful download of axelera-win-runtime-installer.exe

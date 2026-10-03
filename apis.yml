@@ -95,20 +95,19 @@ apis:
   humanURL: https://docs.axelera.ai/sdk
   baseURL: null
   aid: axeleraai:axelera-ai-sdk
-- aid: axeleraai:axeleraai-api
-  name: Axeleraai API
-  description: 'Axeleraai API as documented publicly: 5 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
-
-    not the provider''s own document.'
-  humanURL: https://docs.axelera.ai/sdk/v1.7/user-guides/sdk-install
+- aid: axeleraai:axeleraai-artifactory-api
+  name: Axeleraai Artifactory API
+  description: The Artifactory API from Axeleraai — 5 operation(s) for artifactory.
+  humanURL: https://docs.axelera.ai/sdk
   baseURL: https://software.axelera.ai
+  tags:
+  - Artifactory
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/axeleraai-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/axeleraai-artifactory-api-openapi.yml
   - type: JSONSchema
-    url: json-schema/axeleraai-get-artifactory-axelera-win-packages18-x18-xid-response-schema.json
-
+    url: >-
+      json-schema/axeleraai-get-artifactory-axelera-win-packages18-x18-xid-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
