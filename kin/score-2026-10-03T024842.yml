@@ -1,0 +1,54 @@
+# Kin Score artifact — axeleraai — 2026-10-03T024842
+# The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
+---
+kin_score:
+  slug: axeleraai
+  schema_version: 0.23.0
+  scored_at: '2026-10-03'
+  run_ts: 2026-10-03T024842
+  composite: 31.9
+  band: thin
+  facets:
+    discoverability: 66.1
+    contract_quality: 17.8
+    contract_governance: 22.0
+    operational_transparency: 31.6
+    developer_ergonomics: 31.0
+    access_clarity: 34.2
+  agent_readiness:
+    score: 20.2
+    band: agent-aware
+    dimensions:
+      spec_presence: true
+      agentic_access: false
+      reversibility_documented: na
+      mcp_server: false
+      auth_clarity: false
+      idempotency: na
+      error_semantics: false
+      openapi_examples: false
+      rate_limit_signal: false
+      event_surface_described: false
+      agent_skills: false
+      well_known_catalog: false
+      consent_identity: false
+      agent_card: false
+      dry_run_mode: na
+      delegated_identity: false
+      protected_resource_metadata: verified
+      dynamic_client_registration: false
+      agentic_commerce: platform
+  regulatory:
+    applies: true
+    regime: Horizontal (data, software, accessibility, platform)
+    regime_id: horizontal
+    score: 22.7
+    matched_via: fallback
+  provenance:
+    mcp: derived
+    conformance: derived
+    contracts:
+      total: 2
+      derived: 2
+      coverage: 100.0
+      callable: 100.0
